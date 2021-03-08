@@ -1,0 +1,16 @@
+<%- include("components/header.ejs") -%>
+
+<form>
+<p>Min <input type='text' name='min'></p>
+<p>Max <input type='text' name='max'></p>
+<p><input type='submit' value='send'></p> </form>
+<% 
+
+if(rand) {%>
+<h1><%- rand%></h1>
+
+<%}%>
+
+
+
+<%- include("components/footer.ejs") -%>

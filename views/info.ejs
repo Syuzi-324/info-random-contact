@@ -1,0 +1,10 @@
+<%- include("components/header.ejs") -%>
+
+<h1><%- userInfo.name %></h1>
+<p><%- userInfo.email %><p>
+<% for(let item of userInfo.languages) {%>
+<ul><li><%= item%></li></ul>
+
+<%}%>
+
+<%- include("components/footer.ejs") -%>
